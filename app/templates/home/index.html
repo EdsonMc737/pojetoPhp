@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <!-- O elemento onde a navbar será carregada -->
+    <div id="navbar"></div> 
+    <script>
+        // Carrega o arquivo da navbar e insere no elemento com id "navbar"
+        fetch('../fixo/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <p>Cadastro de Usuario</p>
+</body>
+</html>

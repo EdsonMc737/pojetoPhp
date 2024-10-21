@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Logout</title>
+    <link rel="stylesheet" href="../../static/logout.css">
+</head>
+<body>
+    <script>
+        function logout() {
+           
+            window.location.href = '../home/index.html'; 
+        }
+    </script>
+
+    <div class="logout-container">
+        <h2>Deseja realmente sair?</h2>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    <a href="../interacao/cadastro.html" class="cancel-link">Cancelar</a>
+</div>
+</body>
+</html>
