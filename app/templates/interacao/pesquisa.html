@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/tabelaCrud.css">
     <title>Index</title>
 </head>
 <body>
@@ -16,6 +17,28 @@
                 document.getElementById('navCrud').innerHTML = data;
             });
     </script>
-    <p>pesquisa</p>
+    <h1>Pesquisa</h1>
+
+    <table>
+        <thead>
+          <tr>
+            <th>RA</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="ra"></td>
+            <td><input type="text" name="nome" ></td>
+            <td><input type="text" name="endereco" ></td>
+            <td><input type="email" name="email" ></td>
+            <td><input type="tel" name="telefone" ></td>
+          </tr>
+        </tbody>
+      </table>
+      
 </body>
 </html>
