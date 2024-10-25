@@ -3,14 +3,14 @@
 include 'conexao.php';
 
 // Sua lógica de consulta ao banco de dados aqui
-$sql = "SELECT * FROM usuarios"; // Exemplo de consulta
+$sql = "SELECT * FROM aluno"; // Exemplo de consulta
 $result = $conexao->query($sql);
 
 // Verifica se a consulta retornou resultados
 if ($result->num_rows > 0) {
     // Exibe os dados de cada linha
     while ($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["id"]. " - Nome: " . $row["nome"]. " - E-mail: " . $row["email"]. "<br>";
+        echo "ra: " . $row["RA"]. " - Nome: " . $row["nome"]. " - Endereço: " . $row["endereco"].  " - E-mail: " . $row["email"]."" - Telefone: " . $row["telefone"].<br>";
     }
 } else {
     echo "0 resultados";
